@@ -1,9 +1,9 @@
 package br.com.macielribeiro.todolist.user;
 
+import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.UUID;
 
-public interface IUserRepository extends JpaRepository <UserModel, UUID> {
+public interface IUserRepository extends JpaRepository<UserModel, UUID>{
     UserModel findByUsername(String username);
 }
